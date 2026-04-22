@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Brenova Veículos — concessionária de carros usados em Minas Gerais. CRM próprio integrado a OLX, WhatsApp Cloud API, Instagram Direct e Facebook Messenger." />
+    <meta name="description" content="Brenova Veículos — concessionária de veículos seminovos em Minas Gerais." />
     <title>Brenova Veículos · Concessionária</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +23,7 @@
         --muted: #6b7990;
         --border: #e3e8f0;
       }
-      html, body { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: var(--ink); background: #fff; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+      html, body { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: var(--ink); background: #fff; line-height: 1.6; -webkit-font-smoothing: antialiased; }
       a { color: var(--royal); text-decoration: none; }
       a:hover { text-decoration: underline; }
 
@@ -41,7 +41,7 @@
         background: radial-gradient(ellipse 80% 60% at 20% 0%, rgba(74,111,165,.35) 0%, transparent 60%);
         pointer-events: none;
       }
-      .container { max-width: 880px; margin: 0 auto; position: relative; }
+      .container { max-width: 760px; margin: 0 auto; position: relative; }
 
       .brand {
         display: flex;
@@ -61,27 +61,13 @@
 
       h1 { font-size: clamp(32px, 5vw, 52px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 20px; }
       h1 span { color: #b9c6de; font-weight: 400; }
-      .lead { font-size: 18px; color: rgba(255,255,255,.85); max-width: 620px; line-height: 1.6; }
+      .lead { font-size: 18px; color: rgba(255,255,255,.88); max-width: 620px; line-height: 1.6; }
 
       section { padding: 64px 32px; }
       section:nth-of-type(even) { background: var(--mist); }
       h2 { font-size: 24px; font-weight: 600; letter-spacing: -0.012em; margin-bottom: 20px; color: var(--deep); }
       h3 { font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
       p { margin-bottom: 16px; color: var(--ink); }
-      .muted { color: var(--muted); font-size: 14px; }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 24px;
-        margin-top: 24px;
-      }
-      .card {
-        background: #fff;
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 20px;
-      }
 
       .contact dt { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
       .contact dd { font-size: 15px; color: var(--ink); margin-bottom: 16px; font-variant-numeric: tabular-nums; }
@@ -106,60 +92,28 @@
           Brenova · Veículos
         </div>
         <h1>
-          Concessionária de carros usados<br />
-          <span>operando com CRM próprio</span>
+          Compra e venda de<br />
+          <span>veículos seminovos</span>
         </h1>
         <p class="lead">
-          Empresa de Minas Gerais focada em comprar e vender veículos seminovos,
-          com atendimento centralizado por um sistema próprio que unifica OLX,
-          WhatsApp, Instagram e Messenger no mesmo inbox operacional.
+          Concessionária em Minas Gerais, com atendimento direto ao cliente
+          por telefone, WhatsApp e visita presencial.
         </p>
       </div>
     </header>
 
     <section>
       <div class="container">
-        <h2>Sobre a empresa</h2>
+        <h2>Sobre</h2>
         <p>
-          Brenova Veículos é uma concessionária brasileira especializada em
-          veículos seminovos. Operamos no mercado de Minas Gerais, com presença
-          digital em marketplaces automotivos e redes sociais, e atendimento
-          direto ao cliente por telefone, WhatsApp e visita presencial.
+          A Brenova Veículos é uma concessionária brasileira dedicada à
+          compra e venda de veículos seminovos. Mantemos estoque próprio e
+          trabalhamos com financiamento, troca e venda à vista.
         </p>
         <p>
-          Para organizar nossa operação — estoque, leads, atendimento e pós-venda —
-          mantemos um sistema interno proprietário desenvolvido e operado
-          exclusivamente pela loja.
+          Atendimento transparente, com inspeção documental e mecânica de
+          todo veículo negociado.
         </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2>Sistema de atendimento e integrações</h2>
-        <p>
-          Nosso CRM é uma aplicação desktop privativa (não comercializada) que
-          consome APIs públicas dos marketplaces e redes sociais para
-          centralizar o atendimento ao cliente:
-        </p>
-        <div class="grid">
-          <div class="card">
-            <h3>Anúncios OLX</h3>
-            <p class="muted">Recebimento de leads e mensagens de chat dos anúncios OLX diretamente no inbox do sistema, via API oficial da plataforma.</p>
-          </div>
-          <div class="card">
-            <h3>WhatsApp Cloud API</h3>
-            <p class="muted">Atendimento de mensagens do número comercial da loja via API oficial da Meta, com resposta bidirecional integrada.</p>
-          </div>
-          <div class="card">
-            <h3>Instagram Direct + Messenger</h3>
-            <p class="muted">Mensagens do Instagram Business e Facebook Messenger do Marketplace consolidadas no mesmo inbox unificado.</p>
-          </div>
-          <div class="card">
-            <h3>Feed Facebook Marketplace</h3>
-            <p class="muted">Publicação automática do estoque de veículos no Facebook Marketplace via feed XML (Vehicles Catalog da Meta).</p>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -168,11 +122,11 @@
         <h2>Contato</h2>
         <dl class="contact">
           <dt>Responsável</dt>
-          <dd>Vitor Costa</dd>
+          <dd>Claudiney Carlos Costa</dd>
           <dt>Telefone</dt>
           <dd>(31) 99769-1754</dd>
           <dt>E-mail</dt>
-          <dd><a href="mailto:vitorcosta93461@gmail.com">vitorcosta93461@gmail.com</a></dd>
+          <dd><a href="mailto:claudiney.carloss@gmail.com">claudiney.carloss@gmail.com</a></dd>
           <dt>Razão social</dt>
           <dd>Evolua Empreendimentos</dd>
           <dt>Localização</dt>
